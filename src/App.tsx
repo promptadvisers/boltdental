@@ -20,8 +20,15 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-6">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto mt-12">
         <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="mb-8 overflow-hidden rounded-xl h-40">
+            <img
+              src="https://images.unsplash.com/photo-1588774060651-f077a7b7fcb9?auto=format&fit=crop&w=1200&q=60"
+              alt="Dental office"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div className="flex items-center gap-3 mb-8">
             <Stethoscope className="w-8 h-8 text-indigo-600" />
             <h1 className="text-3xl font-bold text-gray-800">Dental Compensation Calculator</h1>

@@ -21,11 +21,13 @@ export function InputField({ label, value, onChange, placeholder, icon: Icon }: 
         )}
         <input
           type="number"
+          inputMode="numeric"
+          min="0"
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className={`w-full rounded-lg border-gray-200 focus:border-indigo-500 focus:ring-indigo-500 ${
-            Icon ? 'pl-10' : ''
-          }`}
+          className={`w-full rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 ${
+            Icon ? 'pl-10' : 'px-4'
+          } py-3`}
           placeholder={placeholder}
         />
       </div>
