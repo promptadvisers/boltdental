@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply font-sans text-gray-800;
+  }
   input[type="number"] {
     @apply py-3 px-4;
   }

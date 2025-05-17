@@ -14,7 +14,11 @@ export function CompensationResult({ amount }: CompensationResultProps) {
           <h2 className="text-lg font-semibold text-gray-800">Total Compensation</h2>
         </div>
         <div className="text-2xl font-bold text-indigo-600">
-          ${amount.toLocaleString()}
+          {amount.toLocaleString('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            maximumFractionDigits: 0,
+          })}
         </div>
       </div>
     </div>
